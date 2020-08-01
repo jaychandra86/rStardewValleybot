@@ -17,7 +17,7 @@ Clone the repository then edit the config.py file with your API keys and Token k
 
 config.py looks something like this
 
-Twitter consumer keys and access tokens, used for OAuth
+***Twitter consumer keys and access tokens, used for OAuth***
 
 **You can get all of these keys from https://developer.twitter.com**
 ```
@@ -29,7 +29,7 @@ access_token = 'access token here'
 
 access_token_secret = 'access token secret here'
 ```
-Reddit client ID and client secret keys here
+***Reddit client ID and client secret keys here***
 
 **You can get your client ID and client secret from https://reddit.com/prefs/apps**
 ```
