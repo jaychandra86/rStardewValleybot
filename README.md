@@ -28,9 +28,9 @@ consumer_secret = 'twitter api secret key'
 access_token = 'access token here'
 
 access_token_secret = 'access token secret here'
-
-Reddit client ID and client secret keys here
 ```
+Reddit client ID and client secret keys here
+
 **You can get your client ID and client secret from https://reddit.com/prefs/apps**
 ```
 username = "your reddit username"
