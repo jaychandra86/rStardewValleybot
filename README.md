@@ -45,6 +45,6 @@ client_secret = "client secret"
 
 Edit the run.py file for your needs.
 
-You need to edit the subreddit name and line 69 then edit the title in line 75.
+You might need to edit the subreddit name in line 69 and title in line 75
 
 That's all you need to do.
