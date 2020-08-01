@@ -5,7 +5,7 @@ import prawcore
 import time
 import requests
 
-
+#Login to Reddit
 def loginToReddit():
     try:
         print("-----------------------------------------------")
@@ -22,7 +22,7 @@ def loginToReddit():
         print('* Login failed')
         print('-----------------------------------------------')
 
-
+#Grabs an image from Reddit
 def grabNewImage(url):
     print("-----------------------------------------------")
     print('* Fetching wallpaper from the Reddit')
@@ -36,7 +36,7 @@ def grabNewImage(url):
         print('* Something went wrong while downloading image')
         print("-----------------------------------------------")
 
-
+#Posts the image to twitter
 def postTweet(title):
     try:
         print("-----------------------------------------------")
@@ -67,10 +67,13 @@ def main():
     reddit = loginToReddit()
     try:
         for submission in reddit.subreddit("stardewvalley").hot(limit=5):
+            #limit in the above line will give 5 posts from Redditi, change it to whatever you like.
             print("-----------------------------------------------")
             print("* Fetching submission from reddit")
-            title = submission.title
+            title = submission.title #title is the title of reddit post
             title = title + ". posted by u/" + str(submission.author) + " #StardewValley #Stardew"
+            #above line concatenates title with username of the user whose post is being downloaded and hash tags stardewvalley and stardewy
+            #you may need to edit title for your needs
             url = submission.url
             if 'jpg' in url:
                 grabNewImage(url)
@@ -108,6 +111,13 @@ def main():
         time.sleep(60)
 
 
-
+#running the main function
 if __name__ == "__main__":
     main()
+
+#Uncomment the following code if you want to run this script forever.
+"""
+while True:
+    if __name__ == "__main__":
+        main()
+"""
