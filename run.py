@@ -67,6 +67,7 @@ def main():
     reddit = loginToReddit()
     try:
         for submission in reddit.subreddit("stardewvalley").hot(limit=5):
+            #you can scrape any subreddit posts, just replace "stardewvalley" with the subreddit you want to scrape, like "memes" or "dankmemes"
             #limit in the above line will give 5 posts from Redditi, change it to whatever you like.
             print("-----------------------------------------------")
             print("* Fetching submission from reddit")
