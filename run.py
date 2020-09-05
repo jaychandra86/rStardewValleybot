@@ -25,7 +25,7 @@ def loginToReddit():
 #Grabs an image from Reddit
 def grabNewImage(url):
     print("-----------------------------------------------")
-    print('* Fetching wallpaper from the Reddit')
+    print('* Fetching post from Reddit')
     try:
         r = requests.get(url)
         with open('img.jpg', 'wb') as image:
