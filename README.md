@@ -1,5 +1,6 @@
 # rStardewValleybot
 This script will take posts from r/stardewvalley on reddit and post them on twitter.
+You can find the live bot here https://twitter.com/rStardewValley
 
 ## Requirements
 Python 3.6 or above
