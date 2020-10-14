@@ -5,13 +5,7 @@ You can find the live bot here https://twitter.com/rStardewValley
 ## Requirements
 Python 3.6 or above
 ```
-tweepy - type 'pip install tweepy' in terminal
-```
-```
-praw - type 'pip install praw' in terminal
-```
-```
-requests - type 'pip install requests' in terminal
+pip install -r requirements.txt
 ```
 ## Usage
 Clone the repository then edit the config.py file with your API keys and Token keys
